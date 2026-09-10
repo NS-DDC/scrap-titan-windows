@@ -1,11 +1,30 @@
 {
-  "tag": "v0.3.1-windows-v012",
-  "zip_bytes": 38463163,
-  "sha256": "3c16a7695273fc0c11e7751197ad1a6e32f45e3f2558f1d7a52326998286f7c5",
+  "version": "0.4.0",
+  "build": "v014",
+  "zip_bytes": 45945662,
+  "sha256": "65b8a79570cde815c5f9f80f975225756e3f81c574977205a92eec1fe4560007",
   "runtime_files": 155,
-  "package_files": 158,
-  "build_manifest_matches": true,
+  "package_files": 161,
   "zip_crc_ok": true,
   "extracted_all_files_match": true,
-  "new_game_launch": false
+  "actual_extracted_player_run": true,
+  "same_runtime_source_all_final_tests_and_builds": true,
+  "test_checks": {
+    "VERIFY": 30,
+    "SAW": 30,
+    "HOWITZER": 30,
+    "FULL": 33,
+    "REFINE": 16,
+    "SAVE": 12,
+    "SAVEFRESH": 4,
+    "PRESENTATION": 70,
+    "AUDIOFRESH": 1,
+    "LAYOUT": 15
+  },
+  "full_victory_seconds": 1632.8714599609375,
+  "android_runtime": "NOT_RUN",
+  "physical_touch": "NOT_RUN",
+  "android_fps": "NOT_MEASURED",
+  "other_pc": "NOT_RUN",
+  "human_art_audio_balance": "PENDING"
 }
