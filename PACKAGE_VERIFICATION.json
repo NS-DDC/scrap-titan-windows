@@ -1,0 +1,11 @@
+{
+  "tag": "v0.3.1-windows-v012",
+  "zip_bytes": 38463163,
+  "sha256": "3c16a7695273fc0c11e7751197ad1a6e32f45e3f2558f1d7a52326998286f7c5",
+  "runtime_files": 155,
+  "package_files": 158,
+  "build_manifest_matches": true,
+  "zip_crc_ok": true,
+  "extracted_all_files_match": true,
+  "new_game_launch": false
+}
