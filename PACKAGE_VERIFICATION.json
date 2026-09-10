@@ -1,27 +1,141 @@
 {
-  "version": "0.4.0",
-  "build": "v014",
-  "zip_bytes": 45945662,
-  "sha256": "65b8a79570cde815c5f9f80f975225756e3f81c574977205a92eec1fe4560007",
-  "runtime_files": 155,
-  "package_files": 161,
+  "version": "0.5.0",
+  "build": "v015",
+  "zip_bytes": 50720874,
+  "sha256": "cee4bcfd9b5db970115a10ca8fa9594d556f7e98fba894b41ec26cace6091bd0",
   "zip_crc_ok": true,
   "extracted_all_files_match": true,
   "actual_extracted_player_run": true,
-  "same_runtime_source_all_final_tests_and_builds": true,
-  "test_checks": {
-    "VERIFY": 30,
-    "SAW": 30,
-    "HOWITZER": 30,
-    "FULL": 33,
-    "REFINE": 16,
-    "SAVE": 12,
-    "SAVEFRESH": 4,
-    "PRESENTATION": 70,
-    "AUDIOFRESH": 1,
-    "LAYOUT": 15
+  "gui": {
+    "at": 1789040767.1601167,
+    "closed": true,
+    "player": "ZIP-extracted Windows v015,1280x720 client",
+    "evidence_scope": "Actual desktop game via scoped Sky mouse/keyboard. Started from an unedited normal-speed field-test checkpoint; not a new full100wave Windows manual play.",
+    "observed": [
+      "Three lobby modes and starting weapon buttons",
+      "Natural boss checkpoint loaded at02:33 into paused state",
+      "Resumed actual crusher warning/attacks and observed armor fall; no source/state edits during GUI",
+      "One-touch ultimate click: auto-target crusher at184.19s; no manual aim/confirmation",
+      "Natural crusher defeat at186.03s,three readable reward cards",
+      "Selected Crush Echo plus compatible saw part; reward event exactly once; TrialComplete result with3evolutions",
+      "Lobby then new12wave howitzer run",
+      "Natural growth card pause/selection",
+      "Typed rivet part modal: incompatible saw click did not change selected kind;selectedslot1 then replaced howitzer with rivet",
+      "Natural defeat at29.27seconds while standing, no forced-health command",
+      "Restart reset to wave1,320health,level1 and fresh build; Escape paused at13.20seconds;later screenshot still13seconds",
+      "Owned game closed and four prior personal files restored by SHA256"
+    ],
+    "limits": [
+      "One joystick drag was attempted; displacement or sustained keyboard movement was not established by this GUI check",
+      "No physical simultaneous two-finger test",
+      "No Android install/run/FPS/OS lifecycle test",
+      "No fresh full Windows100wave manual session",
+      "Human final art/audio/balance approval and other PC are pending"
+    ],
+    "log_events_verified": [
+      "ultimate_auto_target_5 t=184.19",
+      "crusher_defeated_reward_pending t=186.03",
+      "crusher_reward_claimed_once_1",
+      "state_TrialComplete",
+      "part_equipped_0_slot_0",
+      "state_Defeat t=29.27",
+      "state_Paused t=13.20"
+    ],
+    "screenshots": {
+      "01-resumed-paused.png": "a42c61ba9a19cfcfe0b3356859ecc686355706f8755cc0797fe9e533a25637e2",
+      "02-real-crusher-reward.png": "bc8d6d36e14ec8e263e73a3078e35700b912cc4cee9aa8d616f72928dcb46e61",
+      "03-real-trial-result.png": "174bf0eae1c8f635d5cdc70ec90971cc9df88c9e20fa6e4b50aa10441022164d",
+      "04-real-growth-card.png": "06c22c47052c4607963da64aa09a39fe3e2e74fb252c5c01b6787afc83e909bd",
+      "05-typed-part-locked.png": "2cfc6c82f7691c10e4d6bfc7333d2debdbba239be7842f577317f4cd8f091267",
+      "06-natural-defeat.png": "d9bebc589c8d68f14d2e2e927ab83ae66f9804894c0afa1fd429ee30e48a5e4e",
+      "07-restarted-paused.png": "65238d4d9582fcd3e16dad135267ed43b04a76a6f2c8ed449103a094cb4e074d"
+    }
   },
-  "full_victory_seconds": 1632.8714599609375,
+  "checks": {
+    "ENCOUNTER": 64,
+    "ENCOUNTERSAVE": 4,
+    "ENCOUNTERPLAY": 13,
+    "ENCOUNTERSAW": 13,
+    "ENCOUNTERHOWITZER": 13,
+    "FULL": 14,
+    "LAYOUT": 33
+  },
+  "full_combat_seconds": 1666.2366943359375,
+  "observed_waves": 100,
+  "full_echo_events": 1342,
+  "runtime_provenance": {
+    "ENCOUNTER": {
+      "runtime_matches_current": false,
+      "combat_runtime_matches_current": true,
+      "only_difference": [
+        "UnityProjects\\MechaScrapyard_20260910_v001\\Assets\\Mecha\\Runtime\\PrototypeHUD.cs",
+        "UnityProjects\\MechaScrapyard_20260910_v001\\Assets\\Mecha\\Runtime\\PrototypeProgression.cs"
+      ],
+      "explanation": "Proved presentation-only replacements: existing0.8second interval description and/or parts/card rectangle sizes. No gameplay values, callbacks or combat code changed."
+    },
+    "ENCOUNTERSAVE": {
+      "runtime_matches_current": false,
+      "combat_runtime_matches_current": true,
+      "only_difference": [
+        "UnityProjects\\MechaScrapyard_20260910_v001\\Assets\\Mecha\\Runtime\\PrototypeHUD.cs",
+        "UnityProjects\\MechaScrapyard_20260910_v001\\Assets\\Mecha\\Runtime\\PrototypeProgression.cs"
+      ],
+      "explanation": "Proved presentation-only replacements: existing0.8second interval description and/or parts/card rectangle sizes. No gameplay values, callbacks or combat code changed."
+    },
+    "ENCOUNTERPLAY": {
+      "runtime_matches_current": false,
+      "combat_runtime_matches_current": true,
+      "only_difference": [
+        "UnityProjects\\MechaScrapyard_20260910_v001\\Assets\\Mecha\\Runtime\\PrototypeHUD.cs",
+        "UnityProjects\\MechaScrapyard_20260910_v001\\Assets\\Mecha\\Runtime\\PrototypeProgression.cs"
+      ],
+      "explanation": "Proved presentation-only replacements: existing0.8second interval description and/or parts/card rectangle sizes. No gameplay values, callbacks or combat code changed."
+    },
+    "ENCOUNTERSAW": {
+      "runtime_matches_current": false,
+      "combat_runtime_matches_current": true,
+      "only_difference": [
+        "UnityProjects\\MechaScrapyard_20260910_v001\\Assets\\Mecha\\Runtime\\PrototypeHUD.cs",
+        "UnityProjects\\MechaScrapyard_20260910_v001\\Assets\\Mecha\\Runtime\\PrototypeProgression.cs"
+      ],
+      "explanation": "Proved presentation-only replacements: existing0.8second interval description and/or parts/card rectangle sizes. No gameplay values, callbacks or combat code changed."
+    },
+    "ENCOUNTERHOWITZER": {
+      "runtime_matches_current": false,
+      "combat_runtime_matches_current": true,
+      "only_difference": [
+        "UnityProjects\\MechaScrapyard_20260910_v001\\Assets\\Mecha\\Runtime\\PrototypeHUD.cs",
+        "UnityProjects\\MechaScrapyard_20260910_v001\\Assets\\Mecha\\Runtime\\PrototypeProgression.cs"
+      ],
+      "explanation": "Proved presentation-only replacements: existing0.8second interval description and/or parts/card rectangle sizes. No gameplay values, callbacks or combat code changed."
+    },
+    "FULL": {
+      "runtime_matches_current": false,
+      "combat_runtime_matches_current": true,
+      "only_difference": [
+        "UnityProjects\\MechaScrapyard_20260910_v001\\Assets\\Mecha\\Runtime\\PrototypeHUD.cs"
+      ],
+      "explanation": "Proved presentation-only replacements: existing0.8second interval description and/or parts/card rectangle sizes. No gameplay values, callbacks or combat code changed."
+    },
+    "LAYOUT": {
+      "runtime_matches_current": true,
+      "combat_runtime_matches_current": true,
+      "only_difference": [],
+      "explanation": "Exact Runtime C# hashes match."
+    },
+    "WINDOWS": {
+      "runtime_matches_current": true,
+      "combat_runtime_matches_current": true,
+      "only_difference": [],
+      "explanation": "Exact Runtime C# hashes match."
+    },
+    "ANDROID": {
+      "runtime_matches_current": true,
+      "combat_runtime_matches_current": true,
+      "only_difference": [],
+      "explanation": "Exact Runtime C# hashes match."
+    }
+  },
   "android_runtime": "NOT_RUN",
   "physical_touch": "NOT_RUN",
   "android_fps": "NOT_MEASURED",
